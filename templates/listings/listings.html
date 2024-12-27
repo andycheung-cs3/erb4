@@ -42,15 +42,15 @@
             <div class="card-img-overlay">
               <h2>
                 <span class="badge badge-secondary text-white"
-                  >${{listing.price | intword }}</span
+                  >${{listing.price | intcomma }}</span
                 >
               </h2>
             </div>
             <div class="card-body">
               <div class="listing-heading text-center">
-                <h4 class="text-primary">{{listing.title}}</h4>
+                <h4 class="text-primary">{{listing.title |title }}</h4>
                 <p>
-                  <i class="fas fa-map-marker text-secondary"></i> {{listing.district}}
+                  <i class="fas fa-map-marker text-secondary"></i> {{listing.get_district_display}}
                   
                 </p>
               </div>
