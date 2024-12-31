@@ -1,4 +1,6 @@
-{% extends 'base.html' %}{% load humanize %}{% block content  %}
+{% extends 'base.html' %}{% load humanize %}
+{% block title %} |Features {% endblock %}
+{% block content  %}
 <section id="showcase-inner" class="py-5 text-white">
     <div class="container">
       <div class="row text-center">
@@ -25,6 +27,7 @@
       </nav>
     </div>
   </section>
+  {% include 'partials/_alert.html' %}
   <section id="listings" class="py-4">
     <div class="container">
       <div class="row">
